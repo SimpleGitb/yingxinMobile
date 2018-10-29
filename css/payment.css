@@ -1,0 +1,19 @@
+.weui-btn{
+	margin-top: 20px;
+	background: RGB(74,144,226);
+}
+.weui-btn:active,.weui-btn:visited{
+	background: RGB(16,83,241) !important;
+}
+.weui-yj{
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+	width: 30px;
+    height: 30px;
+}
+.dormitory{
+	width: 50px;
+}
+.weui-cells{
+	margin-top: 0;
+}

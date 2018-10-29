@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>手机号选择</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jqpagination.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/phone.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		
+		<script src="../js/jquery-weui.min.js"></script>
+		<script src="../js/jquery.jqpagination.min.js"></script>
+	</head>
+	<body>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="javascript:void(0);">手机号选择</a>
+			</h3>
+		</div>
+		
+		<div class="weui-tab">
+		  <div class="weui-navbar">
+		    <a class="weui-navbar__item " href="#tab1" onclick="getData(1)"> 中国电信</a>
+		    <a class="weui-navbar__item" href="#tab2" onclick="getData(2)">中国移动</a>
+		    <a class="weui-navbar__item" href="#tab3" onclick="getData(3)">中国联通</a>
+		  </div>
+		  <div class="weui-tab__bd">
+			   <div class="tab-head header1">
+				       <i class="weui-icon-search"></i>
+				       <span>选号段  ></span>
+					   <!--<a ><span>丨</span>173</a>
+					   <a ><span>丨</span>183</a>
+					   <a ><span>丨</span>180</a>-->
+			       </div>
+			       
+			       <div class="weui-cells">
+					  <div class="weui-cell" style="padding: 10px 0;">
+					    <div class="weui-cell__bd">
+							<div class="weui-row row1">
+							  <h2>请选择运营商</h2>
+							  
+							</div>
+					    </div>
+					  </div>
+					</div>
+					
+					<!--<div class="pagination" style="float: right;margin-right: 15px;margin-top: 10px;">
+					  <a href="#" class="first" data-action="first">&laquo;</a>
+					  <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+					  <input type="text" readonly="readonly" data-max-page="40" />
+					  <a href="#" class="next" data-action="next">&rsaquo;</a>
+					  <a href="#" class="last" data-action="last">&raquo;</a>
+					</div>-->
+			  </div>
+		</div>
+		<div class="weui-cells">
+			  <div class="weui-cell">
+			    <div class="weui-cell__bd">
+			    	<h4>套餐内容：</h4>
+					<p>50元/月</p>
+			    </div>
+			  </div>
+		 </div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitFrom()">提交</a>
+	</body>
+	<script src="../js/swiper.min.js"></script>
+	
+	<script src="../js/phone.js"></script>
+</html>

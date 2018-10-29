@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>绿色通道申请</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/greenc.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="#">绿色通道申请</a>
+			</h3>
+		</div>
+		<div class="weui-cells__title">需提交资料如下：</div>
+		<div class="weui-cells weui-cells_form" id="form1" >
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">贷款银行：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="bank" placeholder="请选择银行"/></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">贷款合同号：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="number" placeholder="输入合同号"/></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">上传贷款合同照片：</label></div>
+			   <div class="weui-uploader__bd">
+		         <ul class="weui-uploader__files" id="uploaderFiles">
+		            <!--<li class="weui-uploader__file img" style="background-image: url();"></li>-->
+		          
+		          <li class="weui-uploader__input-box">
+		            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="multiple">
+		          </li>
+		          </ul>
+		        </div>
+			</div>
+			<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitFrom()">提交</a>
+		</div>
+		
+	</body>
+	<script src="../js/green.js"></script>
+	
+</html>

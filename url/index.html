@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>首页</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mF_dleung.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/homePage.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.min.js"></script>
+		<script src="../js/myfocus-2.0.1.min.js"></script>
+		<script src="../js/mF_dleung.js"></script>
+		<script src="../js/myfocus.js"></script>
+	</head>
+	<body>
+		<div class="header">
+		    <div class="wrap">
+		    	<div class="ad" id="picBox">
+					<div class="loading"><img src="../img/loading.gif" /></div>
+					<div class="pic">
+						<ul>
+							<li><a href="#"><img src="../img/banner1.png" alt="学院正门"/></a></li>
+							<li><a href="#"><img src="../img/banner2.png" alt="图书馆"/></a></li>
+							<li><a href="#"><img src="../img/banner3.png" alt="校园夜景"/></a></li>
+						</ul>
+					</div>
+				</div>
+		    </div>
+			
+		</div>
+		<div class="backg"></div>
+		
+		<div class="weui-grids">
+		  <a href="notice.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/repot.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		     	 新生报到须知
+		    </p>
+		  </a>
+		  <a href="person_info.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/per.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生个人信息查询
+		    </p>
+		  </a>
+		  <a href="information.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/vol.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生预到报登记
+		    </p>
+		  </a>
+		  <a href="payment.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/play.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		     	 新生网上缴费
+		    </p>
+		  </a>
+		  <a href="green.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/green.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生绿色通道申请
+		    </p>
+		  </a>
+		  <a href="announcement.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/mess.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		     	 迎新信息公告管理
+		    </p>
+		  </a>
+		  <a href="dormitory.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/dor.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生自助选宿舍
+		    </p>
+		  </a>
+		  <a href="phone.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon" style="width: 18px;">
+		      <img src="../img/ph.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生自助选手机号
+		    </p>
+		  </a>
+		  <a href="shops.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/shop.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	新生自购商品店舍
+		    </p>
+		  </a>
+		  <a href="changeMajor.html" class="weui-grid js_grid">
+		    <div class="weui-grid__icon">
+		      <img src="../img/pri.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	转专业申请
+		    </p>
+		  </a>
+		  <a href="mailbox.html" class="weui-grid js_grid">
+		  	 <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em; background-color: RGB(74,144,226);visibility: hidden;"></span>
+		    <div class="weui-grid__icon">
+		      <img src="../img/mess.png" alt="">
+		    </div>
+		    <p class="weui-grid__label">
+		      	短消息
+		    </p>
+		  </a>
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript">
+$(function () {
+    $.ajax({
+        type: 'get',
+        url: '../info.txt', // http://zfbtest.3w.dkys.org/ZXData/api.ashx?action=info
+        dataType: 'json',
+        xhrFields: {withCredentials: true },
+        success: function (data) {
+            Udata = data;
+            switch (data.state) {
+                case 1:
+                    if(data.unreadcount!=parseInt("" || "0")){
+                    	$(".weui-badge").css("visibility","visible");
+                    	$(".weui-badge").html(data.unreadcount);
+                    }
+                    break;
+                case 0:
+                    alertZx(data.msg, '/login.html?url=' + encodeURIComponent(window.location.href), 3000);
+                    break;
+                default: $.alert(data.msg); break;
+            }
+        },
+        error: function (stat) {
+            $.alert('本次请求失败，请稍后再试！');
+        }
+    });
+});
+	</script>
+</html>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>短消息</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mailbox.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.js"></script>
+	</head>
+	<body ontouchstart>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="javascript:void(0);">短消息</a>
+			</h3>
+		</div>
+	
+		<div class="weui-tab">
+	      <div class="weui-navbar">
+	        <div class="weui-navbar__item weui-bar__item--on" href="#tab1">未读消息</div>
+	        <div class="weui-navbar__item" href="#tab2">已读消息</div>
+	      </div>
+	      <div class="weui-tab__bd">
+	        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active infinite">
+	          <h1 class="doc-head">消息列表1</h1>
+	          <div class="content-padded">
+	            <div style="background: RGB(242,242,242);width: 100%;height: 10px;"></div>
+		       		<div class="weui-panel weui-panel_access">
+					  <div class="weui-panel__bd UnReadList"></div>
+					</div>
+	          </div>
+	          <div class="weui-panel__ft weui-panel__ft1" style="display: none;">
+			    <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+			      <div class="weui-cell__bd">没有更多了~</div>
+			    </a>    
+			  </div>
+	          <div class="weui-loadmore">
+	            <i class="weui-loading"></i>
+	            <span class="weui-loadmore__tips">正在加载</span>
+	          </div>
+	        </div>
+	        <div id="tab2" class="weui-tab__bd-item infinite">
+	          <h1 class="doc-head">消息列表2</h1>
+	          <div class="content-padded">
+	            <div style="background: RGB(242,242,242);width: 100%;height: 10px;"></div>
+		       		<div class="weui-panel weui-panel_access">
+					  <div class="weui-panel__bd ReadList"></div>
+					</div>
+	            </div>
+	            <div class="weui-panel__ft weui-panel__ft2" style="display: none;">
+				    <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+				      <div class="weui-cell__bd">没有更多了~</div>
+				    </a>    
+				  </div>
+		          <div class="weui-loadmore">
+		            <i class="weui-loading"></i>
+		            <span class="weui-loadmore__tips">正在加载</span>
+		          </div>
+	        </div>
+	      </div>
+	  </div>
+    <script src="../js/mailbox.js"></script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+.weui-bar__item--on{
+	color: #2580d3 !important;
+}
+.weui-msg__icon-area img{
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.weui-msg {
+    padding-top: 30px;
+}
+.weui-msg__icon-area {
+    margin-bottom: 5px;
+}
+.weui-msg__text-area {
+    margin-bottom: 20px;
+}
+.weui-cell{
+	padding: 10px 25px;
+	color: #666;
+}
+.weui-tab__bd-item{
+	margin-bottom: 20px;
+}
+#tab4 {
+	background: RGB(244,244,244);
+}
+#tab4 .weui-flex{
+	margin-top: 20px;
+	background: white;
+	height: 130px;
+}
+
+.weui-media-box_appmsg .weui-media-box__hd{
+	width: 120px;
+    height: 100px;
+}
+.weui-media-box__title span{
+	float: right;
+	margin-right: 20px;
+	color: #999;
+}
+.weui-media-box__desc .size{
+	margin-left: 10px;
+}
+.weui-time{
+	color: #999;
+	margin-top: 15px;
+}
+.weui-time span{
+	float: right;
+	margin-right: 20px;
+	color: #999;
+}
+.weui-panel__ft{
+	background: RGB(244,244,244);
+}
+.weui-panel__ft .weui-cell__bd{
+	text-align: center;
+}

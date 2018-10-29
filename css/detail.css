@@ -1,0 +1,13 @@
+
+.weui-panel__bd{
+	padding: 15px;
+}
+.weui-media-box__title{
+	font-weight: bold;
+}
+pre{
+	margin-top: 15px;
+	word-wrap: break-word; 
+	white-space: pre-wrap; 
+	font-size: 14px;
+}

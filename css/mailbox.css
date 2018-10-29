@@ -1,0 +1,25 @@
+body,html{
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.weui-navbar__item{
+	background-color: white;
+}
+.weui-navbar__item.weui-bar__item--on{
+	background-color: white;
+	border-bottom:2px solid RGB(74,144,226);
+	color: RGB(74,144,226);
+}
+.weui-panel{
+	margin-top: 0;
+	
+}
+.weui-media-box{
+	border-bottom: 1px solid RGB(242,242,242);
+}
+.weui-panel__ft{
+	background: RGB(244,244,244);
+}
+.weui-panel__ft .weui-cell__bd{
+	text-align: center;
+}

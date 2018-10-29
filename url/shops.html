@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>新生自购商品店舍</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shops.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.min.js"></script>
+	</head>
+	<body>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="javascript:void(0);">新生自购商品店舍</a>
+			</h3>
+		</div>
+		<div class="weui-panel weui-panel_access">
+		  <div class="weui-panel__hd">军训服</div>
+		  <div class="weui-panel__bd">
+		    <div class="weui-media-box weui-media-box_appmsg jxfz">
+		      <div class="weui-media-box__hd">
+		        <img class="weui-media-box__thumb" id="Field" src="../img/军训.png">
+		      </div>
+		      <div class="weui-media-box__bd">
+		        <h4 class="weui-media-box__title">军训服装</h4>
+		        <p class="weui-media-box__desc">说明：所有学生必须参加军训，且需要选取军训服，请根据自己的需求，选取合适的尺码。</p>
+		       <span> 尺码选择</span>
+		        	<div class="weui-row">
+						  <div class="weui-col-33"><span>155</span>cm</div>
+						  <div class="weui-col-33"><span>160</span>cm</div>
+						  <div class="weui-col-33"><span>165</span>cm</div>
+						  <div class="weui-col-33"><span>170</span>cm</div>
+						  <div class="weui-col-33"><span>175</span>cm</div>
+						  <div class="weui-col-33"><span>180</span>cm</div>
+						</div>
+						<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitJxcm()">确定</a>
+		       </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="weui-panel weui-panel_access">
+		  <div class="weui-panel__hd">生活用品</div>
+		  <div class="weui-panel__bd goodslist">
+		  	<div class="weui-panel__ft" style="text-align: center;background: RGB(244,244,244);">
+			    <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+			      <div class="weui-cell__bd">暂无商品</div>
+			    </a>    
+			  </div>
+		  </div>
+		</div>
+		<div class="weui-cells weui-cells_radio">
+		  <label class="weui-cell weui-check__label" for="x11">
+		  	<div class="weui-cell__hd"><img src="../img/wechat.png" style="width: 25px;"></div>
+		    <div class="weui-cell__bd">
+		      <p>微信支付</p>
+		    </div>
+		    <div class="weui-cell__ft">
+		      <input type="radio" class="weui-check" name="radio1" id="x11" value="weixin">
+		      <span class="weui-icon-checked"></span>
+		    </div>
+		  </label>
+		  <label class="weui-cell weui-check__label" for="x12">
+		  	<div class="weui-cell__hd"><img src="../img/Pay.png" style="width: 25px;"></div>
+		    <div class="weui-cell__bd">
+		      <p>支付宝支付</p>
+		    </div>
+		    <div class="weui-cell__ft">
+		      <input type="radio" name="radio1" class="weui-check" value="alipay" id="x12" checked="checked">
+		      <span class="weui-icon-checked"></span>
+		    </div>
+		  </label>
+		</div>
+		<div class="weui-footer">
+			<i class="weui-icon-safe-success"></i>
+			<span>金额: <font>￥80</font></span>
+			<a href="javascript:;" class="weui-btn weui-btn_warn" onclick="confirmBuy()">提交</a>
+		</div>
+	</body>
+	<script src="../js/base.js"></script>
+	<script src="../js/shops.js"></script>
+	
+</html>

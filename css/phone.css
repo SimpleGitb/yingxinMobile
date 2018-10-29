@@ -1,0 +1,89 @@
+.weui-panel__ft{
+	background: RGB(244,244,244);
+}
+.weui-panel__ft .weui-cell__bd{
+	text-align: center;
+}
+.weui-flex{
+	
+	margin-top: 10px;
+	background: white;
+}
+.weui-media-box__title{
+	color: RGB(255,121,73);
+}
+.weui-media-box {
+    padding: 5px 10px 10px 10px;
+}
+.weui-media-box__desc{
+	margin-top: 10px;
+}
+.weui-media-box__desc span{
+	color: #000000;
+}
+.weui-media-box__title span{
+	color: white;
+	background: RGB(82,199,202);
+	padding: 3px;
+	border-radius: 3px;
+}
+.tab-head{
+	padding: 5px 5px 5px 20px;
+}
+.tab-head>span,.tab-head>i{
+	color: #2580d3;
+}
+.tab-head>a>span{
+	color: #888;
+}
+.active-a{
+	color: #2580d3;
+}
+.weui-cells{
+	margin-top: 0;
+}
+.weui-row .weui-col-33{
+	border: 1px solid #ccc;
+	text-align: center;
+	font-size: 0.5rem;
+	padding: 2px;
+	margin-bottom: 10px;
+	margin-right: 10px;width: 26%;float: left;
+}
+.border-color{
+	border: 1px solid #2580d3;
+	color: #2580d3;
+}
+
+.weui-btn{
+	margin-top: 20px;
+	background: RGB(74,144,226);
+	width: 90%;
+}
+.weui-btn:active,.weui-btn:visited{
+	background: RGB(16,83,241) !important;
+}
+.weui-navbar__item{
+	background-color: white;
+}
+.weui-navbar__item.weui-bar__item--on{
+	background-color: white;
+	border-bottom:2px solid RGB(74,144,226);
+	color: RGB(74,144,226);
+}
+.pagination a{
+	line-height: 1rem;
+}
+.pagination input{
+	font-size: 0.5rem;
+}
+.row1 {
+      height: 140px;
+    }
+.row1 h2{
+	margin: auto;
+}
+.swiper-container {
+      width: 18rem;
+      height: 140px;
+    }

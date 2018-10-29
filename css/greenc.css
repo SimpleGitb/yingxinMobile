@@ -1,0 +1,24 @@
+.weui-cells__title{
+	background: RGB(244,244,244);
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.weui-cell{
+	
+}
+.weui-cell .weui-label{
+	color: #999;
+}
+.weui-cell__bd input{
+	border: 0;
+}
+.weui-btn{
+	margin-top: 20px;
+	background: RGB(74,144,226);
+	width: 90%;
+}
+.weui-btn:active,.weui-btn:visited{
+	background: RGB(16,83,241) !important;
+}
+

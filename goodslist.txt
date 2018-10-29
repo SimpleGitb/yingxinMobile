@@ -1,0 +1,1 @@
+{"state":1,"msg":"获取成功","list":[{"goodsSn":"50001","goodsName":"被子","goodsDesc":"被子","goodsImg":"1_150111080328_19.jpg","price":0.01,"rate":0.0},{"goodsSn":"50002","goodsName":"脸盆","goodsDesc":"脸盆","goodsImg":"20141213220137_J8hK4.png","price":0.01,"rate":0.0}]}

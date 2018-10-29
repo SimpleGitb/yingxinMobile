@@ -1,0 +1,47 @@
+.weui-panel__ft{
+	background: RGB(244,244,244);
+}
+.weui-panel__ft .weui-cell__bd{
+	text-align: center;
+}
+.weui-flex{
+	margin-top: 10px;
+	background: white;
+}
+.weui-media-box__title{
+	color: RGB(255,121,73);
+}
+.weui-media-box {
+    padding: 5px 10px 10px 20px;
+}
+.weui-media-box__desc{
+	margin-top: 10px;
+}
+.weui-media-box__desc span{
+	color: #000000;
+}
+.weui-media-box__title span{
+	color: white;
+	background: RGB(82,199,202);
+	padding: 3px;
+	border-radius: 3px;
+}
+
+/*beds*/
+.weui-cell__bd{
+	text-align: center;
+}
+.weui-cell__bd .bed-title{
+	color: #999;
+}
+.weui-btn{
+	background: RGB(74,144,226);
+	width: 90%;
+	margin-bottom: 5px;
+}
+.weui-btn:active,.weui-btn:visited{
+	background: RGB(16,83,241) !important;
+}
+.color{
+	color: #2580d3;
+}

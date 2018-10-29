@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>预报到信息登记</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/information.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="#">预报到信息登记</a>
+			</h3>
+		</div>
+		
+		<div class="weui-cells__title">到校信息</div>
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">随行人数：</label></div>
+			      <div class="weui-cell__bd"><input type="text" name="num" class="num" placeholder="请选择" /></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">报到日期：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="my-input" placeholder="请选择"/></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">到站时间：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="my-time" placeholder="请选择"/></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">交通方式：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="transport" placeholder="请选择"/></div>
+			</div>
+			<div class="weui-cell">
+			   <div class="weui-cell__hd"><label class="weui-label">到站地点：</label></div>
+			      <div class="weui-cell__bd"><input type="text" class="location" placeholder="请选择"/></div>
+			</div>
+		</div>
+		
+		<div class="weui-cells weui-cells_checkbox">
+		  <label class="weui-cell weui-check__label" for="s11">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		    <div class="weui-cell__bd">
+		      <p>是否乘坐校车到校</p>
+		    </div>
+		  </label>
+		 </div>
+		 
+		 <a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitFrom()">提交</a>
+	</body>
+	<script src="../js/information.js"></script>
+	
+</html>

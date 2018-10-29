@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: helvetica;
+	-webkit-text-size-adjust: 100%;
+	-webkit-user-select: none;
+}
+a,input,button{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input,button{
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+input{
+	outline: none;
+	vertical-align: middle;
+}
+.weui-cells__title{
+	background: RGB(244,244,244);
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.weui-cell{
+	padding: 10px 25px;
+}
+.weui-cell .weui-label{
+	color: #999;
+}
+.weui-cell__bd input{
+	border: 0;
+}
+.weui-check__label{
+	margin: auto;
+	padding-left:20px ;
+}
+.weui-icon-checked{
+	color: RGB(74,144,226);
+}
+.weui-btn{
+	margin-top: 20px;
+	background: RGB(74,144,226);
+	width: 90%;
+}
+.weui-btn:active,.weui-btn:visited{
+	background: RGB(16,83,241) !important;
+}
+.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{
+	color: RGB(74,144,226);
+}

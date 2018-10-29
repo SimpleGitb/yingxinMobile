@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>登陆</title>
+		<script src="js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-weui.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="main" id="main">
+			<div class="main_img">
+				<img src="img/bg.png"/>
+			</div>
+
+			<div class="header">
+				<div class="home_logo">
+					<img src="img/home_logo.png"/>
+					<div class="home_p">
+						<p>迎新服务平台</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="container2">
+					<div class="name"><img src="img/ksh.png"/></div>
+					<div class="text">
+						<input value="17340101150705" type="text" class="ksh" placeholder="请输入考生号"/>
+					</div>
+				</div>
+				<div class="container2">
+					<div class="name"><img src="img/name.png"/></div>
+					<div class="text">
+						<input value="陈龙" type="text" class="xm" placeholder="姓名"/>
+					</div>
+				</div>
+				<div class="container2">
+					<div class="name"><img src="img/passworld.png"/></div>
+					<div class="text">
+						<input value="123" type="text" class="password" placeholder="密码"/>
+					</div>
+				</div>
+				<div>
+					<div class="container3">
+						<div class="name"><img src="img/code.png"/></div>
+						<div class="text">
+							<input type="text" id="text" class="code" placeholder="验证码"/>
+						</div>
+					</div>
+					<div class="captcha">
+			                <img src="http://192.168.31.196:1314/ZXData/code.ashx" onclick="this.src='http://192.168.31.196:1314/ZXData/code.ashx?'+Math.random()" title="看不清楚，点击换一张" />
+			            </div>
+				</div>
+		        <a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitFrom();">登 陆</a>
+			
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/denglu.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+	    <meta http-equiv="expires" content="Wed,26 Feb 1997 08:21:57 GMT" />
+		<title>转专业</title>
+		<script src="../js/fontSize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/weui-navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/changeMajor.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery-weui.min.js"></script>
+	</head>
+	<body>
+		<div class="header-container">
+			<img src="../img/logo.png"/>
+		</div>
+		<div class="showback-to" onclick="history.back()">
+			<img src="../img/图层 1.png"/>
+		</div>
+		<div class="header">
+			<h3>当前位置:
+			<a href="index.html">首页</a>
+			>
+			<a href="javascript:void(0);">转专业</a>
+			</h3>
+		</div>
+		<div class="weui-cells weui-cells_form">
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">姓 名：</label></div>
+		    <div class="weui-cell__bd xm"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">性 别：</label></div>
+		    <div class="weui-cell__bd xb"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">学 号：</label></div>
+		    <div class="weui-cell__bd ksh"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">原院系：</label></div>
+		    <div class="weui-cell__bd yx"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">原专业：</label></div>
+		    <div class="weui-cell__bd zy"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">原班级：</label></div>
+		    <div class="weui-cell__bd bj"></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">转入院系：</label></div>
+		    <div class="weui-cell__bd"><input type="text" class="intoYx" placeholder="请选择"/></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">转入专业：</label></div>
+		    <div class="weui-cell__bd"><input type="text" class="intoZy" placeholder="请选择"/></div>
+		  </div>
+		  <div class="weui-cell">
+		    <div class="weui-cell__hd"><label class="weui-label">申请理由：</label></div>
+		    <textarea required placeholder="填写申请理由"></textarea>
+		  </div>
+		</div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary" onclick="submitFrom()">提交</a>
+	</body>
+	<script src="../js/changeMajor.js"></script>
+	
+</html>
